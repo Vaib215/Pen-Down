@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Inter&display=swap');
+
+html {
+  --text-color: #000;
+  --bg-color: rgb(255, 255, 255);
+}
+
+html[data-theme='dark'] {
+  --text-color: rgb(255, 255, 255);
+  --bg-color: rgb(0, 0, 0);
+}
+
+body {
+  position: relative;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 16em;
+  max-width: 24em;
+  padding: 0 4em;
+  text-align: left;
+  font-size: 19px;
+  color: var(--text-color);
+  font-family: "IM FELL English";
+  margin-inline: auto;
+}
+
+
+h1 {
+  font-family: 'IM FELL English';
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vector-icon1 {
+  padding: 0.5em;
+  width: 24px;
+  height: 22px;
+}
+
+.new-note-wrapper {
+  border: 1px solid var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+  word-wrap:break-word;
+}
+
+.new-note-wrapper:focus-within, .new-note-wrapper:hover, .note-wrapper:focus-within, .note-wrapper:hover  {
+  border: 2px solid var(--text-color);
+}
+
+.notes-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+textarea {
+  all:unset;
+  background-color: transparent;
+  width: 100%;
+  height: 130px;
+  font-family: "Inter";
+  font-size: 1em;
+}
+.ellipse-icon1 {
+  width: 42px;
+  height: 42px;
+}
+.icbaseline-clear-icon {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  padding: 0.5em;
+}
+.button-wrapper{
+  display: flex;
+  gap: 0.5em;
+  justify-content: flex-end;
+}
+button {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  width: 42px;
+  outline: none;
+  border: 1px solid var(--text-color);
+  height: 42px;
+  border-radius: 50%;
+}
+
+.note-wrapper {
+  border-radius: 16px;
+  background-color: var(--bg-color);
+  border: 1px solid var(--text-color);
+  box-sizing: border-box;
+  padding: 0 1em;
+  font-family: Inter;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+@media (max-width: 420px){
+  body {
+    padding: 1em;
+  }
+}
+
+p {
+  word-wrap:break-word;
+  width: 85%;
+}
+
+button:hover, button:focus {
+  border: 2px solid var(--text-color);
+  border-radius: 100%;
+}
+
+svg {
+  color: var(--text-color);
+  pointer-events: none;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Pen Down</title>
+    <meta name="description" content="Write down your thoughts" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Pen Down</h1>
+      <button id="theme-button">
+        <svg
+          width="16"
+          height="20"
+          viewBox="0 0 16 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.5 2C9.91 2 13.5 5.59 13.5 10C13.5 14.41 9.91 18 5.5 18C5.16 18 4.82 17.98 4.49 17.93C6.4 15.77 7.5 12.95 7.5 10C7.5 7.05 6.4 4.23 4.49 2.07C4.82 2.02 5.16 2 5.5 2ZM5.5 0C3.68 0 1.97 0.5 0.5 1.35C3.49 3.08 5.5 6.3 5.5 10C5.5 13.7 3.49 16.92 0.5 18.65C1.97 19.5 3.68 20 5.5 20C11.02 20 15.5 15.52 15.5 10C15.5 4.48 11.02 0 5.5 0Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </header>
+    <form class="new-note-wrapper">
+      <textarea placeholder="Add a note.."></textarea>
+      <div class="button-wrapper">
+        <button id="clear-button">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <button id="add-button">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.125 13.125L9.375 18.375L19.875 7.125"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </form>
+    <section class="notes-wrapper"></section>
+  </body>
+</html>
